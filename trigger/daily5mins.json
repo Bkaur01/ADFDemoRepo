@@ -1,0 +1,24 @@
+{
+	"name": "daily5mins",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "copyrawtocurated",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 5,
+				"startTime": "2021-07-21T16:44:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
