@@ -1,0 +1,41 @@
+{
+	"name": "rawstudentdata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "StudentData.txt",
+				"folderPath": "student",
+				"container": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "StudID",
+				"type": "String"
+			},
+			{
+				"name": " Name",
+				"type": "String"
+			},
+			{
+				"name": " Country",
+				"type": "String"
+			},
+			{
+				"name": " Email",
+				"type": "String"
+			}
+		]
+	}
+}
